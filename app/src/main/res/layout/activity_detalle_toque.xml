@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_militar"
+    android:padding="@dimen/padding_general">
+
+    <!-- Línea guía superior para bajar el contenido -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <!-- Título del toque -->
+    <TextView
+        android:id="@+id/txtDetalleNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_nombre_toque"
+        android:textColor="@color/arena"
+        android:textSize="@dimen/tamano_texto_titulo"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guidelineTop" />
+
+    <!-- Hora del toque -->
+    <TextView
+        android:id="@+id/txtDetalleHora"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margen_vertical_campo"
+        android:text="@string/hora"
+        android:textColor="@color/item_toque"
+        android:textSize="@dimen/tamano_texto_grande"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtDetalleNombre" />
+
+    <!-- Repetición del toque -->
+    <TextView
+        android:id="@+id/txtDetalleRepeticion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margen_vertical_campo"
+        android:text="@string/repeticion"
+        android:textColor="@color/item_toque"
+        android:textSize="@dimen/tamano_texto_grande"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtDetalleHora" />
+
+    <!-- Botón para reproducir -->
+    <Button
+        android:id="@+id/btnReproducir"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/altura_boton"
+        android:layout_marginTop="@dimen/margen_boton_grande"
+        android:background="@color/boton_verde"
+        android:maxWidth="@dimen/ancho_maximo"
+        android:text="@string/reproducir"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtDetalleRepeticion" />
+
+    <!-- Botón de volver -->
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/altura_boton"
+        android:layout_marginTop="@dimen/margen_vertical_campo"
+        android:background="@color/boton_verde"
+        android:maxWidth="@dimen/ancho_maximo"
+        android:text="@string/volver"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnReproducir" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

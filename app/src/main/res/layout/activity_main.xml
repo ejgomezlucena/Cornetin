@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/camuflaje"
+    tools:context=".MainActivity">
+
+    <!-- View invisible para dejar espacio bajo la barra de estado -->
+    <View
+        android:id="@+id/espacioStatusBar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/altura_status_bar"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Toolbar personalizada con estilo militar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/camuflaje"
+        android:title="@string/app_name"
+        android:titleTextColor="@color/verde_militar_claro"
+        android:gravity="center"
+        app:titleTextAppearance="@style/EstiloTituloAppBar"
+        app:layout_constraintTop_toBottomOf="@id/espacioStatusBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- RecyclerView para mostrar la lista de toques -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerToques"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margen_vertical_campo"
+        android:clipToPadding="false"
+        android:contentDescription="@string/lista_toques"
+        android:padding="@dimen/padding_general"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

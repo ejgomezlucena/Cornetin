@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margen_elemento"
+    app:cardBackgroundColor="@color/verde_card"
+    app:cardCornerRadius="@dimen/radio_tarjeta"
+    app:cardElevation="@dimen/elevacion_tarjeta">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_general">
+
+        <!-- Texto: Nombre del toque -->
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_nombre_toque"
+            android:textColor="@color/item_toque"
+            android:textSize="@dimen/texto_nombre_toque"
+            android:textStyle="bold" />
+
+        <!-- Texto: Hora del toque -->
+        <TextView
+            android:id="@+id/txtHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_hora"
+            android:textColor="@color/item_toque"
+            android:textSize="@dimen/texto_hora_toque" />
+
+        <!-- Texto: Repetición del toque -->
+        <TextView
+            android:id="@+id/txtRepeticion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_repeticion"
+            android:textColor="@color/item_toque"
+            android:textSize="@dimen/texto_repeticion_toque" />
+
+        <!-- Botones: Editar y eliminar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margen_elemento_pequeno"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnEditar"
+                android:layout_width="@dimen/altura_boton"
+                android:layout_height="@dimen/altura_boton"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:contentDescription="@string/accion_editar"
+                android:src="@drawable/ic_edit"
+                app:tint="@color/item_toque" />
+
+            <ImageButton
+                android:id="@+id/btnEliminar"
+                android:layout_width="@dimen/altura_boton"
+                android:layout_height="@dimen/altura_boton"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:contentDescription="@string/accion_eliminar"
+                android:src="@drawable/ic_delete"
+                app:tint="@color/item_toque" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

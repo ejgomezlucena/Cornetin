@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Colores por defecto (generados por Android Studio, no se usan actualmente) -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Colores personalizados para estilo militar -->
+    <color name="fondo_militar">#2E3B2D</color>
+    <color name="fondo_militar_oscuro">#2E3B2D</color>
+    <color name="verde_militar_claro">#ABCB41</color>
+    <color name="arena">#D2B48C</color>
+    <color name="blanco_hora">#F5F5F5</color>
+    <color name="verde_card">#576B55</color>
+    <color name="boton_verde">#4A5B3E</color>
+    <color name="item_toque">#FDFBE5</color>
+
+</resources>

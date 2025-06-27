@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Nombre de la app -->
+    <string name="app_name">CORNETÍN</string>
+    <string name="lista_toques">Lista de toques</string>
+
+    <!-- Textos para los ítems de lista -->
+    <string name="texto_nombre_toque">Nombre del toque</string>
+    <string name="texto_hora">Hora</string>
+    <string name="texto_repeticion">Repetición</string>
+
+    <!-- Valores de ejemplo (para pruebas) -->
+    <string name="ejemplo_nombre">Diana</string>
+    <string name="ejemplo_hora">06:45</string>
+    <string name="ejemplo_repeticion">L-V</string>
+
+    <!-- Mensajes de error / carga -->
+    <string name="error_carga_toques">No se pudieron cargar los toques</string>
+    <string name="cargando_toques">Cargando toques…</string>
+    <string name="sin_toques">No hay toques disponibles</string>
+
+    <!-- Acciones / botones -->
+    <string name="boton_añadir_toque">Añadir Toque</string>
+    <string name="seleccionar_archivo">Seleccionar archivo</string>
+    <string name="accion_editar">Editar toque</string>
+    <string name="accion_eliminar">Eliminar toque</string>
+
+
+    <!-- Días de la semana / repeticiones (idénticos a base de datos) -->
+    <string name="repeticion_ld">L-D</string>
+    <string name="repeticion_lv">L-V</string>
+    <string name="repeticion_lj">L-J</string>
+    <string name="repeticion_v">V</string>
+    <string name="repeticion_sd_festivos">S-D / Festivos</string>
+    <string name="repeticion_emergencia">Emergencia</string>
+
+    <!-- Reproducción y navegación -->
+    <string name="reproducir">🔊</string>
+    <string name="volver">Volver</string>
+
+    <!-- Formularios - Crear/Editar Toque -->
+    <string name="hora">Hora</string>
+    <string name="repeticion">Repetición</string>
+    <string name="hint_nombre">Nombre del toque</string>
+    <string name="hint_hora">Hora (HH:mm)</string>
+    <string name="hint_repeticion">Repetición</string>
+    <string name="hint_categoria">Categoría</string>
+    <string name="hint_mes">Mes</string>
+    <string name="hint_sonido">Sonido</string>
+    <string name="texto_activo">¿Activo?</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="btn_actualizar">Actualizar</string>
+    <string name="editar">Editar</string>
+    <string name="eliminar">Eliminar</string>
+
+    <!-- Notificación previa al toque -->
+    <string name="mensaje_notificacion_toast">En 5 minutos: %1$s</string>
+
+    <!-- Textos para ítems individuales de la lista de toques -->
+    <string name="item_toque_nombre">Nombre del Toque</string>
+    <string name="item_toque_hora">Hora</string>
+    <string name="item_toque_repeticion">Repetición</string>
+
+    <!-- Botones de acción dentro del ítem -->
+    <string name="btn_item_editar">Editar</string>
+    <string name="btn_item_eliminar">Eliminar</string>
+
+    <!-- Spinner vacío para mes opcional -->
+    <string name="opcion_sin_mes"></string>
+
+    <!-- Mensajes generales -->
+    <string name="mensaje_toque_guardado">Toque guardado correctamente</string>
+    <string name="mensaje_toque_actualizado">Toque actualizado correctamente</string>
+    <string name="mensaje_error_guardar">Error al guardar</string>
+    <string name="mensaje_error_actualizar">Error al actualizar</string>
+    <string name="mensaje_formato_hora">Formato de hora incorrecto. Usa HH:mm</string>
+    <string name="mensaje_todos_obligatorios">Todos los campos son obligatorios</string>
+    <string name="mensaje_id_invalido">ID del toque no válido</string>
+    <string name="mensaje_categoria_invalida">Categoría no válida</string>
+
+
+
+
+</resources>

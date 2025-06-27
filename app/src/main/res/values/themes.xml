@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Tema principal de la app (AppCompat) -->
+    <style name="Theme.Cornetín" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- Colores principales -->
+        <item name="colorPrimary">@color/fondo_militar</item>
+        <item name="colorPrimaryDark">@color/fondo_militar_oscuro</item>
+        <item name="colorAccent">@color/verde_militar_claro</item>
+
+        <!-- Estilo visual de la AppBar -->
+        <item name="toolbarStyle">@style/EstiloToolbarCornetin</item>
+
+        <!-- Fuente por defecto -->
+        <item name="android:fontFamily">@font/blackopsone_regular</item>
+        <item name="fontFamily">@font/blackopsone_regular</item>
+    </style>
+
+    <!-- Estilo visual de la Toolbar (AppBar) -->
+    <style name="EstiloToolbarCornetin" parent="Widget.AppCompat.Toolbar">
+        <item name="titleTextAppearance">@style/ToolbarTitleCentrada</item>
+    </style>
+
+    <!-- Título  en AppBar -->
+    <style name="ToolbarTitleCentrada" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/blackopsone_regular</item>
+    </style>
+
+    <style name="EstiloTituloAppBar" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/blackopsone_regular</item>
+        <item name="android:textSize">@dimen/texto_toolbar</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

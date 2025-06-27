@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Margen general para padding de pantallas -->
+    <dimen name="padding_general">16dp</dimen>
+
+    <!-- Altura estándar para botones -->
+    <dimen name="altura_boton">48dp</dimen>
+
+    <!-- Altura estándar para EditText -->
+    <dimen name="altura_edittext">48dp</dimen>
+
+    <!-- Ancho máximo para campos de texto y botones -->
+    <dimen name="ancho_maximo">300dp</dimen>
+
+    <!-- Márgenes verticales entre campos -->
+    <dimen name="margen_vertical_campo">12dp</dimen>
+
+    <!-- Márgenes laterales estándar para campos -->
+    <dimen name="margen_lateral_campo">32dp</dimen>
+
+    <!-- Margen adicional para separación de botones importantes -->
+    <dimen name="margen_boton_grande">24dp</dimen>
+
+    <!-- Tamaños de texto (opcionalmente aplicables a TextView, Button, etc.) -->
+    <dimen name="tamano_texto_normal">16sp</dimen>
+    <dimen name="tamano_texto_grande">20sp</dimen>
+    <dimen name="tamano_texto_titulo">24sp</dimen>
+
+    <!-- Nuevo margen superior para separar encabezados de la AppBar -->
+    <dimen name="margen_superior_encabezado">16dp</dimen>
+
+    <!-- Radio y elevación de tarjetas CardView -->
+    <dimen name="radio_tarjeta">12dp</dimen>
+    <dimen name="elevacion_tarjeta">6dp</dimen>
+
+    <!-- Márgenes pequeños adicionales -->
+    <dimen name="margen_elemento">12dp</dimen>
+    <dimen name="margen_elemento_pequeno">8dp</dimen>
+
+    <!-- Tamaños específicos de texto para item_toque -->
+    <dimen name="texto_nombre_toque">18sp</dimen>
+    <dimen name="texto_hora_toque">16sp</dimen>
+    <dimen name="texto_repeticion_toque">14sp</dimen>
+
+    <!-- Margen superior grande para encabezado de formularios -->
+    <dimen name="margen_superior_encabezado_grande">32dp</dimen>
+
+    <!-- Padding inferior para que los botones no queden pegados abajo -->
+    <dimen name="padding_inferior_formulario">48dp</dimen>
+
+    <!-- Altura de la barra de estado para dejar espacio visible -->
+    <dimen name="altura_status_bar">32dp</dimen>
+
+    <dimen name="texto_toolbar">20sp</dimen>
+
+
+</resources>

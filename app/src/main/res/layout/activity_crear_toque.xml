@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_militar"
+    android:padding="@dimen/padding_general">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_inferior_formulario">
+
+        <!-- Campo: Nombre del toque -->
+
+        <EditText
+            android:id="@+id/edtNombre"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/altura_edittext"
+            android:layout_marginTop="172dp"
+            android:autofillHints=""
+            android:backgroundTint="@color/verde_militar_claro"
+            android:hint="@string/hint_nombre"
+            android:inputType="textCapWords"
+            android:textColor="@color/white"
+            android:textColorHint="@color/arena"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_max="@dimen/ancho_maximo" />
+
+
+        <!-- Campo: Hora -->
+        <EditText
+            android:id="@+id/edtHora"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/altura_edittext"
+            android:autofillHints=""
+            android:hint="@string/hint_hora"
+            android:inputType="time"
+            android:textColor="@color/white"
+            android:textColorHint="@color/arena"
+            android:backgroundTint="@color/verde_militar_claro"
+            android:layout_marginTop="@dimen/margen_vertical_campo"
+            app:layout_constraintTop_toBottomOf="@id/edtNombre"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_max="@dimen/ancho_maximo"
+            app:layout_constrainedWidth="true" />
+
+        <!-- Campo: Repetición -->
+        <EditText
+            android:id="@+id/edtRepeticion"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/altura_edittext"
+            android:autofillHints=""
+            android:hint="@string/hint_repeticion"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/arena"
+            android:backgroundTint="@color/verde_militar_claro"
+            android:layout_marginTop="@dimen/margen_vertical_campo"
+            app:layout_constraintTop_toBottomOf="@id/edtHora"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_max="@dimen/ancho_maximo"
+            app:layout_constrainedWidth="true" />
+
+        <!-- Spinner: Categoría -->
+        <Spinner
+            android:id="@+id/spinnerCategoria"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/altura_edittext"
+            android:layout_marginTop="@dimen/margen_vertical_campo"
+            android:backgroundTint="@color/verde_militar_claro"
+            android:popupBackground="@color/fondo_militar_oscuro"
+            app:layout_constraintTop_toBottomOf="@id/edtRepeticion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_max="@dimen/ancho_maximo"
+            app:layout_constrainedWidth="true" />
+
+        <!-- Spinner: Mes -->
+        <Spinner
+            android:id="@+id/spinnerMes"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/altura_edittext"
+            android:layout_marginTop="@dimen/margen_vertical_campo"
+            android:backgroundTint="@color/verde_militar_claro"
+            android:popupBackground="@color/fondo_militar_oscuro"
+            android:spinnerMode="dropdown"
+            app:layout_constraintTop_toBottomOf="@id/spinnerCategoria"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_max="@dimen/ancho_maximo"
+            app:layout_constrainedWidth="true" />
+
+
+        <!-- Campo: Sonido -->
+        <EditText
+            android:id="@+id/edtSonido"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/altura_edittext"
+            android:autofillHints=""
+            android:hint="@string/hint_sonido"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/arena"
+            android:backgroundTint="@color/verde_militar_claro"
+            android:layout_marginTop="@dimen/margen_vertical_campo"
+            app:layout_constraintTop_toBottomOf="@id/spinnerMes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_max="@dimen/ancho_maximo"
+            app:layout_constrainedWidth="true" />
+
+        <!-- Botón: Seleccionar sonido externo -->
+        <Button
+            android:id="@+id/btnSeleccionarSonido"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/altura_boton"
+            android:text="@string/seleccionar_archivo"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/boton_verde"
+            android:layout_marginTop="@dimen/margen_vertical_campo"
+            app:layout_constraintTop_toBottomOf="@id/edtSonido"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_max="@dimen/ancho_maximo"
+            app:layout_constrainedWidth="true" />
+
+        <!-- CheckBox: Activo -->
+        <CheckBox
+            android:id="@+id/chkActivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/altura_boton"
+            android:text="@string/texto_activo"
+            android:textColor="@color/verde_militar_claro"
+            android:layout_marginTop="@dimen/margen_vertical_campo"
+            app:layout_constraintTop_toBottomOf="@id/btnSeleccionarSonido"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Botón: Guardar toque -->
+        <Button
+            android:id="@+id/btnGuardarToque"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/altura_boton"
+            android:text="@string/btn_guardar"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/boton_verde"
+            android:layout_marginTop="@dimen/margen_boton_grande"
+            app:layout_constraintTop_toBottomOf="@id/chkActivo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_max="@dimen/ancho_maximo"
+            app:layout_constrainedWidth="true" />
+
+        <!-- Botón: Volver -->
+        <Button
+            android:id="@+id/btnVolverCrear"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/altura_boton"
+            android:text="@string/volver"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/boton_verde"
+            android:layout_marginTop="@dimen/margen_vertical_campo"
+            app:layout_constraintTop_toBottomOf="@id/btnGuardarToque"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_max="@dimen/ancho_maximo"
+            app:layout_constrainedWidth="true" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

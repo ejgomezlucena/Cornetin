@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Encabezado de sección que agrupa visualmente los toques -->
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/txtEncabezado"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginTop="@dimen/margen_superior_encabezado_grande"
+    android:background="@color/fondo_militar"
+    android:elevation="2dp"
+
+    android:padding="@dimen/margen_vertical_campo"
+
+    android:gravity="center"
+    android:textAllCaps="true"
+    android:textColor="@color/arena"
+    android:textSize="@dimen/tamano_texto_grande"
+    android:textStyle="bold"
+    android:fontFamily="@font/blackopsone_regular"
+
+    tools:text="ARRIADO" />
